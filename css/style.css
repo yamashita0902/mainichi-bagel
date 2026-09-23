@@ -1,0 +1,641 @@
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Shippori Mincho', 'Yu Mincho', serif; /* 明朝体で凛とした雰囲気に */
+  background-color: #f7f5f0; /* 温かみのある上品な生成り色 */
+  color: #332f2b; /* 深みのある木炭色 */
+  line-height: 2;
+  letter-spacing: 0.08em;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.container-narrow {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ==========================================================================
+   TYPOGRAPHY & SECTION
+   ========================================================================== */
+.section {
+  padding: 100px 0;
+  border-bottom: 1px solid #e5dfd5;
+}
+
+.section-head {
+  margin-bottom: 60px;
+}
+
+.section-en {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  color: #5c6b57; /* 落ち着いた抹茶・竹の緑 */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.section-title, h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #2b2622;
+  letter-spacing: 0.1em;
+}
+
+.section-sub {
+  font-size: 0.9rem;
+  color: #6b635b;
+  margin-top: 12px;
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(247, 245, 240, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  border-bottom: 1px solid #e5dfd5;
+  padding: 16px 0;
+}
+
+.header-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo .logo-ja {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: #2b2622;
+}
+
+.site-logo .logo-en {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  color: #5c6b57;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+
+.header-ec-btn {
+  border: 1px solid #5c6b57;
+  color: #5c6b57;
+  padding: 6px 18px;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+}
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+.hero {
+  padding: 60px 0 90px;
+}
+
+.hero-container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* 和モダンな縦書きキャッチコピー */
+.hero-vertical-text {
+  writing-mode: vertical-rl;
+  font-size: 1.5rem;
+  letter-spacing: 0.3em;
+  color: #2b2622;
+  line-height: 2;
+  height: 380px;
+}
+
+.hero-image-wrap {
+  width: 75%;
+}
+
+.hero-image-wrap img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 4px;
+  filter: contrast(98%);
+}
+
+/* ==========================================================================
+   ABOUT
+   ========================================================================== */
+.about-text-lead {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #524b45;
+  margin-top: 32px;
+}
+
+.about-text-lead p {
+  margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   CRAFT & INGREDIENTS
+   ========================================================================== */
+.craft-list {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.craft-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.craft-item.reverse {
+  direction: rtl;
+}
+
+.craft-item.reverse .craft-body {
+  direction: ltr;
+}
+
+.craft-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.craft-num {
+  font-family: 'Shippori Mincho', serif;
+  font-size: 1.2rem;
+  color: #5c6b57;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.craft-body h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #2b2622;
+}
+
+.craft-body p {
+  font-size: 0.9rem;
+  color: #524b45;
+}
+
+/* ==========================================================================
+   PRODUCTS & EC
+   ========================================================================== */
+.products-section {
+  background-color: #f2eee6; /* ほんのり濃い生成り */
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.product-card {
+  background-color: #f7f5f0;
+  border: 1px solid #e0d8cc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.product-img {
+  height: 260px;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 28px;
+}
+
+.product-cate {
+  font-size: 0.75rem;
+  color: #5c6b57;
+  letter-spacing: 0.15em;
+}
+
+.product-info h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 6px 0 12px;
+}
+
+.product-info p {
+  font-size: 0.85rem;
+  color: #6b635b;
+  margin-bottom: 20px;
+}
+
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed #d8cfc2;
+  padding-top: 16px;
+}
+
+.product-bottom .price {
+  font-size: 1.1rem;
+  color: #2b2622;
+}
+
+.link-order {
+  font-size: 0.85rem;
+  color: #5c6b57;
+  font-weight: 600;
+}
+
+.ec-notice {
+  border: 1px solid #5c6b57;
+  padding: 48px;
+  text-align: center;
+  background-color: #f7f5f0;
+}
+
+.allergy-notice {
+  border: 1px solid #5c6b57;
+  padding: 48px;
+  text-align: center;
+  background-color: #f7f5f0;
+}
+
+.ec-notice p {
+  font-size: 0.9rem;
+  color: #6b635b;
+  margin-bottom: 28px;
+}
+
+.ec-notice h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.allergy-notice p {
+  font-size: 0.9rem;
+  color: #6b635b;
+  margin-bottom: 28px;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  border: 1px solid #2b2622;
+  color: #2b2622;
+}
+
+.btn-outline:hover {
+  background-color: #2b2622;
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: #2b2622;
+  color: #f7f5f0;
+}
+
+/* ==========================================================================
+   REBAKE
+   ========================================================================== */
+.rebake-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.rebake-step {
+  background-color: #f2eee6;
+  padding: 28px;
+  border-left: 3px solid #5c6b57;
+}
+
+.step-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.step-no {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  color: #5c6b57;
+}
+
+.step-head h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.rebake-step p {
+  font-size: 0.85rem;
+  color: #524b45;
+  padding-left: 36px;
+}
+
+/* ==========================================================================
+   MARCHE
+   ========================================================================== */
+.marche-card {
+  border: 1px solid #d8cfc2;
+  padding: 36px;
+  background-color: #f2eee6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.marche-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.marche-tag {
+  background-color: #5c6b57;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 2px 10px;
+  letter-spacing: 0.1em;
+}
+
+.marche-date {
+  font-size: 0.95rem;
+  color: #2b2622;
+  font-weight: 600;
+}
+
+.marche-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.marche-place {
+  font-size: 0.9rem;
+  color: #5c6b57;
+  margin-bottom: 12px;
+}
+
+.marche-desc {
+  font-size: 0.85rem;
+  color: #6b635b;
+}
+
+/* ==========================================================================
+   BLOG / JOURNAL
+   ========================================================================== */
+.blog-section {
+  background-color: #f2eee6;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.journal-card {
+  background-color: #f7f5f0;
+  border: 1px solid #e0d8cc;
+}
+
+.journal-img {
+  height: 200px;
+}
+
+.journal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.journal-body {
+  padding: 24px;
+}
+
+.journal-body time {
+  font-size: 0.75rem;
+  color: #8c827a;
+}
+
+.journal-body h3 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 6px 0 10px;
+}
+
+.journal-body p {
+  font-size: 0.85rem;
+  color: #6b635b;
+}
+
+/* ==========================================================================
+   INSTAGRAM
+   ========================================================================== */
+.insta-lead {
+  font-size: 0.9rem;
+  color: #6b635b;
+  margin-top: 8px;
+}
+
+.insta-handle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  color: #5c6b57;
+  margin: 16px 0 24px;
+}
+
+/* ==========================================================================
+   SHOP INFO
+   ========================================================================== */
+.shop-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.shop-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.shop-table th, .shop-table td {
+  padding: 16px 0;
+  border-bottom: 1px solid #e5dfd5;
+  font-size: 0.85rem;
+}
+
+.shop-table th {
+  text-align: left;
+  width: 30%;
+  color: #5c6b57;
+  font-weight: 500;
+}
+
+.shop-table td {
+  color: #524b45;
+}
+
+.link-text {
+  color: #5c6b57;
+  text-decoration: underline;
+}
+
+.shop-map {
+  background-color: #f2eee6;
+  border: 1px solid #e0d8cc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8c827a;
+  font-size: 0.85rem;
+  min-height: 220px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+  background-color: #2b2622;
+  color: #f7f5f0;
+  padding: 48px 0;
+}
+
+.footer-logo {
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  margin-bottom: 8px;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  color: #8c827a;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+  }
+
+  .hero-vertical-text {
+    writing-mode: horizontal-tb;
+    height: auto;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hero-image-wrap {
+    width: 100%;
+  }
+
+  .craft-item,
+  .craft-item.reverse,
+  .product-grid,
+  .journal-grid,
+  .shop-grid {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .rebake-step p {
+    padding-left: 0;
+  }
+
+  .ec-notice {
+    padding: 28px 16px;
+  }
+}
