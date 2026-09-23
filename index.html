@@ -21,16 +21,25 @@
           <span class="logo-en">まいにちベーグル</span>
         </a>
       </div>
-      <nav class="nav">
+
+      <!-- モバイル用ハンバーガーボタン -->
+      <button type="button" class="hamburger-btn" id="js-hamburger" aria-label="メニューを開閉する" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- ナビゲーションメニュー本体 -->
+      <nav class="nav" id="js-nav">
         <ul class="nav-menu">
-          <li><a href="#about">私たちの想い</a></li>
-          <li><a href="#ingredients">素材と製法</a></li>
-          <li><a href="#products">お品書き</a></li>
-          <li><a href="#rebake">美味しいお召し上がり方</a></li>
-          <li><a href="#marche">催事・マルシェ</a></li>
-          <li><a href="#shop">店舗案内</a></li>
+          <li><a href="#about" class="nav-link">私たちの想い</a></li>
+          <li><a href="#ingredients" class="nav-link">素材と製法</a></li>
+          <li><a href="#products" class="nav-link">お品書き</a></li>
+          <li><a href="#rebake" class="nav-link">美味しいお召し上がり方</a></li>
+          <li><a href="#marche" class="nav-link">催事・マルシェ</a></li>
+          <li><a href="#shop" class="nav-link">店舗案内</a></li>
         </ul>
-        <a href="https://【ECサイトのURL】" target="_blank" class="header-ec-btn">オンラインショップ</a>
+        <a href="https://【ECサイトのURL】" target="_blank" class="header-ec-btn nav-link">オンラインショップ</a>
       </nav>
     </div>
   </header>
@@ -40,7 +49,7 @@
     <div class="hero-container">
       <div class="hero-vertical-text">
         <p>噛むほどに広がる、</p>
-           <p>素材本来の豊かな香り。</p>
+        <p>素材本来の豊かな香り。</p>
       </div>
       <div class="hero-image-wrap">
         <!-- image1 をファーストビューに設定 -->
@@ -55,8 +64,8 @@
       <span class="section-en">OUR PHILOSOPHY</span>
       <h2 class="section-title">大切なあなたの身体と心へ優しさを届ける。</h2>
       <div class="about-text-lead">
-       <p>「mainichi bagel」が大切にしているのは、
-        <P>日々の暮らしにそっと寄り添う滋味深さです。</p>
+        <p>「mainichi bagel」が大切にしているのは、</p>
+        <p>日々の暮らしにそっと寄り添う滋味深さです。</p>
         <p>朝の静かな時間、仕事の合間のひと息、大切な人と囲む食卓。</p>
         <p>一口かみしめるたびに、心がじんわりとほどけていくような、</p>
         <p>素材の力をあなたの毎日にお届けします。</p>
@@ -76,7 +85,6 @@
         <!-- こだわり 1 -->
         <div class="craft-item">
           <div class="craft-img">
-            <!-- image2 を設定 -->
             <img src="images/image2.jpg" alt="成形されたベーグル生地">
           </div>
           <div class="craft-body">
@@ -89,7 +97,6 @@
         <!-- こだわり 2 -->
         <div class="craft-item reverse">
           <div class="craft-img">
-            <!-- image3 を設定 -->
             <img src="images/image3.jpg" alt="焼き上がったベーグル">
           </div>
           <div class="craft-body">
@@ -104,7 +111,6 @@
         <!-- こだわり 3 -->
         <div class="craft-item">
           <div class="craft-img">
-            <!-- image5 を設定 -->
             <img src="images/image5.jpg" alt="包装された商品">
           </div>
           <div class="craft-body">
@@ -131,7 +137,6 @@
 
       <div class="product-grid">
         <div class="product-card">
-          <!-- image4 をプレーンベーグルに設定 -->
           <div class="product-img"><img src="images/image4.jpg" alt="プレーンベーグル"></div>
           <div class="product-info">
             <span class="product-cate">定番</span>
@@ -145,7 +150,6 @@
         </div>
 
         <div class="product-card">
-          <!-- image6 に合わせてチーズベーグルに変更 -->
           <div class="product-img"><img src="images/image6.jpg" alt="チーズベーグル"></div>
           <div class="product-info">
             <span class="product-cate">人気商品</span>
@@ -168,7 +172,7 @@
         </div>
       </div>
      
-      <!-- ▼▼ ここから追加：アレルギーに関するお願い ▼▼ -->
+      <!-- アレルギーに関するお願い -->
       <div class="allergy-notice">
         <h3 class="allergy-title">アレルギーに関するお願い</h3>
         <p>当店のベーグルは、素材本来の味わいを大切にしており、生地に「卵」を使用していないお品を数多くご用意しております。</p>
@@ -177,10 +181,6 @@
         <p>アレルギーをお持ちのお客様におかれましては、必ず各商品の成分・原材料表示をご確認いただき、</p>
         <p>ご自身の責任とご判断にてお召し上がりいただきますようお願い申し上げます。</p>
       </div>
-      <!-- ▲▲ ここまで追加 ▲▲ -->
-
-    </div>
-  </section>
     </div>
   </section>
 
@@ -202,7 +202,7 @@
           <p>食べる前日に冷蔵庫へ移すか、室温で1〜2時間おいて自然解凍します。</p>
         </div>
 
-          <div class="rebake-step">
+        <div class="rebake-step">
           <div class="step-head">
             <span class="step-no">02</span>
             <h3>温める</h3>
@@ -321,6 +321,33 @@
       <p class="copyright">&copy; MAINICHI BAGEL. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <!-- ハンバーガーメニュー制御スクリプト -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.getElementById('js-hamburger');
+      const nav = document.getElementById('js-nav');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      // ボタンクリックで開閉
+      hamburger.addEventListener('click', () => {
+        const isOpen = hamburger.classList.toggle('is-active');
+        nav.classList.toggle('is-active');
+        document.body.classList.toggle('no-scroll');
+        hamburger.setAttribute('aria-expanded', isOpen);
+      });
+
+      // リンククリック時にメニューを閉じる（スムーススクロール対応）
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('is-active');
+          nav.classList.remove('is-active');
+          document.body.classList.remove('no-scroll');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
