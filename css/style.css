@@ -632,7 +632,7 @@ section[id] {
     /* ▼ここから追加：iOS Safariの重なりバグ対策 */
     transform: translateZ(1px);
     -webkit-transform: translateZ(1px);
-    /* ▲ここまで追加 *
+    /* ▲ここまで追加 */
   }
 
   .hamburger-btn span {
