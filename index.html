@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mainichi bagel | mainichi bagel - あなたと大切な人の毎日に寄り添う、丁寧な手づくりベーグル</title>
+  
+  <!-- ▼追加：OGP（SNSシェア用設定） -->
+  <meta property="og:title" content="mainichi bagel | あなたと大切な人の毎日に寄り添う、丁寧な手づくりベーグル">
+  <meta property="og:description" content="岡山県岡山市御津にあるベーグル専門店「mainichi bagel」の公式サイトです。国産小麦や無添加にこだわった身体にやさしいベーグルをお届けします。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mainichi-bagel.com/">
+  <meta property="og:image" content="https://mainichi-bagel.com/images/ogp.jpg">
+  <meta property="og:site_name" content="mainichi bagel">
+  <!-- ▲追加ここまで -->
+
   <!-- 落ち着きと品位のある明朝体・英字フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,15 +44,15 @@
         <ul class="nav-menu">
           <li><a href="#about" class="nav-link">私たちの想い</a></li>
           <li><a href="#ingredients" class="nav-link">素材と製法</a></li>
-          <!-- ↓ クラスに is-hidden を追加 -->
+          <!-- 個別のお品書きはマルシェ期間中のため一時非表示 -->
           <li class="is-hidden"><a href="#products" class="nav-link">お品書き</a></li>
           <li><a href="#rebake" class="nav-link">美味しいお召し上がり方</a></li>
-          <!-- ↓ クラスに is-hidden を追加 -->
+          <!-- 催事案内は一時非表示 -->
           <li class="is-hidden"><a href="#marche" class="nav-link">催事・マルシェ</a></li>
           <li><a href="#shop" class="nav-link">店舗案内</a></li>
         </ul>
-        <!-- ※オンラインショップのボタンも隠す場合は、以下のように is-hidden を追加してください -->
-        <a href="https://mainichibee.base.shop/" target="_blank" class="header-ec-btn nav-link is-hidden">オンラインショップ</a>
+        <!-- ★オンラインショップのボタンを復活 -->
+        <a href="https://mainichibee.base.shop/" target="_blank" class="header-ec-btn nav-link">オンラインショップ</a>
       </nav>
     </div>
   </header>
@@ -55,7 +65,6 @@
         <p>素材本来の豊かな香り。</p>
       </div>
       <div class="hero-image-wrap">
-        <!-- image1 をファーストビューに設定 -->
         <img src="images/image1.jpg" alt="毎日ベーグルの店内">
       </div>
     </div>
@@ -131,14 +140,18 @@
   </section>
 
   <!-- 3. お品書き & EC誘導 (PRODUCTS) -->
-  <section id="products" class="section products-section is-hidden">
+  <!-- ★セクション全体は表示し、中の「商品一覧」だけを隠します -->
+  <section id="products" class="section products-section">
     <div class="container">
-      <div class="section-head text-center">
+      
+      <!-- ★お品書きのタイトルを非表示 -->
+      <div class="section-head text-center is-hidden">
         <span class="section-en">COLLECTION</span>
         <h2>お品書き・お取り寄せ</h2>
       </div>
 
-      <div class="product-grid">
+      <!-- ★商品の一覧を非表示 -->
+      <div class="product-grid is-hidden">
         <div class="product-card">
           <div class="product-img"><img src="images/image4.jpg" alt="プレーンベーグル"></div>
           <div class="product-info">
@@ -147,7 +160,7 @@
             <p>小麦の旨みをストレートに感じられる看板商品。お好みの具材を挟んでサンドイッチにも。</p>
             <div class="product-bottom">
               <span class="price">¥300 <small>(税込)</small></span>
-              <a href="https://mainichibee.base.shop/](https://mainichibee.base.shop/" target="_blank" class="link-order">注文する ➔</a>
+              <a href="https://mainichibee.base.shop/" target="_blank" class="link-order">注文する ➔</a>
             </div>
           </div>
         </div>
@@ -160,22 +173,22 @@
             <p>たっぷりのチーズをのせて香ばしく焼き上げました。外はカリッと、中はもちもちの食感がたまりません。</p>
             <div class="product-bottom">
               <span class="price">¥350 <small>(税込)</small></span>
-              <a href="https://mainichibee.base.shop/](https://mainichibee.base.shop/" target="_blank" class="link-order">注文する ➔</a>
+              <a href="https://mainichibee.base.shop/" target="_blank" class="link-order">注文する ➔</a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- EC誘導枠 -->
+      <!-- ★EC誘導枠は表示したまま -->
       <div class="ec-notice">
         <div class="ec-notice-inner">
           <h3>焼き立ての美味しさを、そのまま全国へ</h3>
           <p>急速冷凍技術により、店舗で焼き上げた直後の風味と食感を閉じ込めて発送いたします。<br>ご自宅でいつでも焼き立ての味をお楽しみいただけます。</p>
-          <a href="https://mainichibee.base.shop/](https://mainichibee.base.shop/" target="_blank" class="btn btn-outline">オンラインショップを見る</a>
+          <a href="https://mainichibee.base.shop/" target="_blank" class="btn btn-outline">オンラインショップを見る</a>
         </div>
       </div>
-     
-      <!-- アレルギーに関するお願い -->
+      
+      <!-- ★アレルギーに関するお願いは表示したまま -->
       <div class="allergy-notice">
         <h3 class="allergy-title">アレルギーに関するお願い</h3>
         <p>当店のベーグルは、素材本来の味わいを大切にしており、生地に「卵」を使用していないお品を数多くご用意しております。</p>
@@ -271,7 +284,7 @@
     <div class="container-narrow text-center">
       <span class="section-en">INSTAGRAM</span>
       <h2>公式インスタグラム</h2>
-      <p class="insta-lead">焼き上がりの時間や日常の風景をお届けしています。</p>
+      <p class="insta-lead">マルシェへの出店情報、インターネット販売について、日常の風景などをお届けしています。</p>
       <p class="insta-handle">@mainichi.bagle</p>
       <a href="https://www.instagram.com/mainichi.bagle/" target="_blank" class="btn btn-dark">Instagramを見る</a>
     </div>
