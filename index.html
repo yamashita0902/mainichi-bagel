@@ -34,12 +34,15 @@
         <ul class="nav-menu">
           <li><a href="#about" class="nav-link">私たちの想い</a></li>
           <li><a href="#ingredients" class="nav-link">素材と製法</a></li>
-          <li><a href="#products" class="nav-link">お品書き</a></li>
+          <!-- ↓ クラスに is-hidden を追加 -->
+          <li class="is-hidden"><a href="#products" class="nav-link">お品書き</a></li>
           <li><a href="#rebake" class="nav-link">美味しいお召し上がり方</a></li>
-          <li><a href="#marche" class="nav-link">催事・マルシェ</a></li>
+          <!-- ↓ クラスに is-hidden を追加 -->
+          <li class="is-hidden"><a href="#marche" class="nav-link">催事・マルシェ</a></li>
           <li><a href="#shop" class="nav-link">店舗案内</a></li>
         </ul>
-        <a href="https://【ECサイトのURL】" target="_blank" class="header-ec-btn nav-link">オンラインショップ</a>
+        <!-- ※オンラインショップのボタンも隠す場合は、以下のように is-hidden を追加してください -->
+        <a href="https://mainichibee.base.shop/" target="_blank" class="header-ec-btn nav-link is-hidden">オンラインショップ</a>
       </nav>
     </div>
   </header>
@@ -89,7 +92,7 @@
           </div>
           <div class="craft-body">
             <span class="craft-num">一</span>
-            <h3>素材へのこだわり</h3>
+            <h3>味わいの土台となる国産小麦</h3>
             <p>国産小麦粉のみを使用。素材が本来持っている自然な風味と芳醇な甘みを最大限に引き出しています。</p>
           </div>
         </div>
@@ -101,7 +104,7 @@
           </div>
           <div class="craft-body">
             <span class="craft-num">二</span>
-            <h3>素材へのこだわり</h3>
+            <h3>からだを想う、自然由来の素材</h3>
             <p>油脂はオメガ3含有量の多いマカダミアナッツオイル、</p>
             <p>ミネラルたっぷりの沖縄産キビ糖、</p>
             <p>長崎五島列島の海塩を使用しております。</p>
@@ -128,7 +131,7 @@
   </section>
 
   <!-- 3. お品書き & EC誘導 (PRODUCTS) -->
-  <section id="products" class="section products-section">
+  <section id="products" class="section products-section is-hidden">
     <div class="container">
       <div class="section-head text-center">
         <span class="section-en">COLLECTION</span>
@@ -144,7 +147,7 @@
             <p>小麦の旨みをストレートに感じられる看板商品。お好みの具材を挟んでサンドイッチにも。</p>
             <div class="product-bottom">
               <span class="price">¥300 <small>(税込)</small></span>
-              <a href="https://【ECサイトのURL】" target="_blank" class="link-order">注文する ➔</a>
+              <a href="https://mainichibee.base.shop/](https://mainichibee.base.shop/" target="_blank" class="link-order">注文する ➔</a>
             </div>
           </div>
         </div>
@@ -157,7 +160,7 @@
             <p>たっぷりのチーズをのせて香ばしく焼き上げました。外はカリッと、中はもちもちの食感がたまりません。</p>
             <div class="product-bottom">
               <span class="price">¥350 <small>(税込)</small></span>
-              <a href="https://【ECサイトのURL】" target="_blank" class="link-order">注文する ➔</a>
+              <a href="https://mainichibee.base.shop/](https://mainichibee.base.shop/" target="_blank" class="link-order">注文する ➔</a>
             </div>
           </div>
         </div>
@@ -168,7 +171,7 @@
         <div class="ec-notice-inner">
           <h3>焼き立ての美味しさを、そのまま全国へ</h3>
           <p>急速冷凍技術により、店舗で焼き上げた直後の風味と食感を閉じ込めて発送いたします。<br>ご自宅でいつでも焼き立ての味をお楽しみいただけます。</p>
-          <a href="https://【ECサイトのURL】" target="_blank" class="btn btn-outline">オンラインショップを見る</a>
+          <a href="https://mainichibee.base.shop/](https://mainichibee.base.shop/" target="_blank" class="btn btn-outline">オンラインショップを見る</a>
         </div>
       </div>
      
@@ -189,7 +192,7 @@
     <div class="container-narrow">
       <div class="section-head text-center">
         <span class="section-en">HOW TO REBAKE</span>
-        <h2>冷凍ベーグルの美味しい召し上がり方</h2>
+        <h2>ベーグルの美味しい召し上がり方</h2>
         <p class="section-sub">ほんのひと手間で、焼き立ての「外はパリッ、中はもちもち」が蘇ります。</p>
       </div>
 
@@ -197,7 +200,7 @@
         <div class="rebake-step">
           <div class="step-head">
             <span class="step-no">01</span>
-            <h3>じっくり解凍する</h3>
+            <h3>(冷凍したときは)じっくり解凍する</h3>
           </div>
           <p>食べる前日に冷蔵庫へ移すか、室温で1〜2時間おいて自然解凍します。</p>
         </div>
@@ -214,7 +217,7 @@
   </section>
 
   <!-- 5. 催事・マルシェ情報 (MARCHE) -->
-  <section id="marche" class="section marche-section">
+  <section id="marche" class="section marche-section is-hidden">
     <div class="container">
       <div class="section-head text-center">
         <span class="section-en">EVENT & MARCHÉ</span>
@@ -234,7 +237,7 @@
   </section>
 
   <!-- 6. ブログ・便り (BLOG) -->
-  <section id="blog" class="section blog-section">
+  <section id="blog" class="section blog-section is-hidden">
     <div class="container">
       <div class="section-head text-center">
         <span class="section-en">JOURNAL</span>
@@ -290,16 +293,20 @@
               <td>毎日ベーグル（MAINICHI BAGEL）</td>
             </tr>
             <tr>
+              <th>住所</th>
+              <td>〒709-2103 岡山県岡山市北区御津紙工2738-22</td>
+            </tr>
+            <tr>
+              <th>営業日</th>
+              <td>水曜日、土曜日</td>
+            </tr>
+            <tr>
               <th>営業時間</th>
-              <td>10:00 〜 売り切れ次第終了</td>
+              <td>10:00 〜 17:00</td>
             </tr>
             <tr>
-              <th>定休日</th>
-              <td>月曜日・火曜日（不定休あり）</td>
-            </tr>
-            <tr>
-              <th>焼き上がり</th>
-              <td>【第1便】10:00 / 【第2便】13:00</td>
+              <th>休業日</th>
+              <td>Instagram内でお知らせ</td>
             </tr>
             <tr>
               <th>SNS</th>
@@ -308,7 +315,8 @@
           </table>
         </div>
         <div class="shop-map">
-          <p>【Google Maps 埋め込みエリア】</p>
+          <!-- Google Mapsの埋め込みコード（岡山市北区御津紙工2738-22） -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.675713437149!2d133.8824361111667!3d34.83921867272218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35541c0000000001%3A0x2b0f4b306de15c7a!2z5bKh5bGx55yM5bKh5bGx5biC5YyX5Yy65b6h5rSl57SZ5belMjc-MjI!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp" width="100%" height="100%" style="border:0; min-height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
