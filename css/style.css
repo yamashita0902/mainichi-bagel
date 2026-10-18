@@ -687,21 +687,57 @@ section[id] {
     font-size: 0.85rem;
   }
 
-  /* ヒーローセクション */
-  .hero-container {
-    flex-direction: column-reverse;
+/* ▼▼▼ ここから上書き・追記 ▼▼▼ */
+
+  /* ヒーローセクション（画像の上にテキストを重ねるデザインに変更） */
+/* ヒーローセクション（画像の上にテキストを重ねるデザインに変更） */
+  .hero {
+    padding: 0 0 40px; /* スマホでは上の大きな余白をなくす */
   }
 
-  .hero-vertical-text {
-    writing-mode: horizontal-tb;
-    height: auto;
-    font-size: 1.2rem;
-    text-align: center;
+  .hero-container {
+    display: block; 
+    position: relative;
+    padding: 0; 
   }
 
   .hero-image-wrap {
     width: 100%;
   }
+
+  .hero-image-wrap img {
+    height: 60vh; 
+    min-height: 400px;
+    border-radius: 0; 
+  }
+
+  .hero-vertical-text {
+    writing-mode: horizontal-tb;
+    height: auto;
+    font-size: 1.1rem;
+    text-align: left; /* ★ここを center から left に変更 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    background-color: rgba(247, 245, 240, 0.9);
+    padding: 32px 28px; /* ★左寄せに合わせて、箱の内側の余白を少し広げました */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08); 
+    border-radius: 4px;
+    z-index: 10;
+  }
+
+  /* 「私たちの想い」テキストを左寄せ */
+  .about-text-lead {
+    text-align: left;
+  }
+
+  .about-text-lead p {
+    margin-bottom: 24px; /* 左寄せ時は段落の隙間を少し広げると読みやすいです */
+  }
+
+  /* ▲▲▲ ここまで上書き・追記 ▲▲▲ */
 
   /* 2カラムレイアウトを1カラム化 */
   .craft-item,
